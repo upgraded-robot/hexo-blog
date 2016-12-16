@@ -2,7 +2,7 @@
 menu:
   Home: index.html #hack
   About: about
-  Gallery: gallery
+  #Gallery: gallery
   Archives: archives
 # Content
 excerpt_link: Read More

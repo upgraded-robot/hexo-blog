@@ -31,6 +31,10 @@ a:hover {
 	text-decoration: underline dotted;
 }
 
+.posts .post-snippet,.article-meta, .article-inner, article .archive-article {
+	border-bottom: solid 1px whitesmoke;
+}
+
 .wrapper {
 	flex:1;
 }
@@ -39,8 +43,30 @@ a:hover {
 	font-weight: bold;
 }
 
-.posts li {
-	border-bottom: solid 1px whitesmoke;
+.article-category {
+	text-transform: capitalize;
+}
+
+.article-tag-list {
+	padding: 0;
+	display: inline;
+}
+
+.article-tag-list li {
+	display: inline-block;
+	background-color: gainsboro;
+	padding: 2px 6px;
+	margin:0 0 5px 5px;
+}
+
+.article-tag-list li a {
+	color: #555;
+}
+
+
+
+.posts .post-snippet p {
+	margin-top: 10px;
 }
 
 .post-title a {
@@ -58,10 +84,44 @@ a:hover {
 	margin-left: 1em;
 }
 
-.widget a, .read-more > a, .read-more > a:hover {
+.article-category a, .widget a, .read-more > a, .read-more > a:hover, .article-nav a {
 	color: #2d4e93;
 }
 
+.article-entry {
+	padding-bottom: 15px;
+}
+
+.article-nav {
+	height: 3em;
+	line-height: 3em;
+	font-size: 1.1em;
+}
+
+/* archive page */
+
+.archives {
+	margin-top: 10px;
+}
+
+.archives-wrap .archive-year-wrap a {
+	color: #555;
+	font-size: 1.1em;
+}
+
+.archive-article {
+	margin:5px 0;
+}
+
+.archive-article h2 {
+	margin-top: 0;
+}
+
+.archive-article h2 a {
+	color: #273043;
+}
+
+/* */
 .main-footer {
 	background-color: whitesmoke;
 	padding: 1.5em 0;

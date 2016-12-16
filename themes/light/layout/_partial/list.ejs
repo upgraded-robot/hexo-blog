@@ -2,25 +2,23 @@
     <div class="col-md-12">
         <ul class="posts">
         <% page.posts.each(function(post){ %>
-            <li>
+            <li class="post-snippet">
                 <h3 class="post-title">
                     <a href="<%- url_for(post.path) %>">
                         <%= post.title %>
                     </a>
                 </h3>
                 <div class='text-muted'>
-                    <%= date(post.date, config.date_format) %> 
-                    <%- partial('post/category', {post:post}) %>
-                    <%- partial('post/tag', {post:post}) %>
+                    <%= date(post.date, config.date_format) %> ·
+                    <%- partial('post/category', {post:post}) %> 
                 </div>
                 <% if(post.excerpt) { %>
-                    <p>
                         <%- post.excerpt %>
                         <span class="read-more">
                             <a href="<%- url_for(post.path) %>#more"><%= theme.excerpt_link %>
                         </a>
-                    </p> 
                 <% } %>
+                <%- partial('post/tag', {post:post}) %>
             </li>
         <% }) %>
         </ul>
