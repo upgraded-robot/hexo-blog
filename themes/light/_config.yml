@@ -1,0 +1,17 @@
+# Header
+menu:
+  Home: index.html #hack
+  About: about
+  Gallery: gallery
+  Archives: archives
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- archive
+- recent_posts
+- tag

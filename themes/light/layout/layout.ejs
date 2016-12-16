@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Use <%= page.title %> for dynamic title -->
+    <title><%= config.title %></title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css" >
+    <%- css('css/main') %>
+</head>
+<body>
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="container wrapper">
+      <div class="row">
+        <main id="main" class="col-md-9">
+          <%- body %> 
+        </main>
+        <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
+          <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+        <% } %>
+      </div>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+</body>
+</html>

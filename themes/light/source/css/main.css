@@ -1,0 +1,68 @@
+/* defaults override*/
+.navbar-collapse {
+  text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
+/* defaults override */
+
+body, html {
+	margin: 0;
+	padding:0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #273043;
+}
+
+a:hover {
+	text-decoration: underline dotted;
+}
+
+.wrapper {
+	flex:1;
+}
+
+.nav .active {
+	font-weight: bold;
+}
+
+.posts li {
+	border-bottom: solid 1px whitesmoke;
+}
+
+.post-title a {
+	color: #273043;
+}
+
+.read-more {
+	text-align: right;
+	font-size: 1.1em;
+	display: block;
+}
+
+.widget-title {
+	text-transform: capitalize;
+	margin-left: 1em;
+}
+
+.widget a, .read-more > a, .read-more > a:hover {
+	color: #2d4e93;
+}
+
+.main-footer {
+	background-color: whitesmoke;
+	padding: 1.5em 0;
+}
